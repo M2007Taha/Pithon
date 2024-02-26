@@ -626,7 +626,7 @@ class Ui_MainWindow(object):
         except:
             print('Error')
     def gcd_lcm_func(self):
-        #try:
+        try:
             print("gcd_lcm function run")
             number1 = int(self.gcd_lcm_input1.text())
             number2 = int(self.gcd_lcm_input2.text())
@@ -636,8 +636,8 @@ class Ui_MainWindow(object):
             result = f"GCD({number1},{number2}) = {gcd}\nLCM({number1},{number2}) = {lcm}"
             self.gcd_lcm_out.append(result)
             print(f"out put : {result}")
-        #except:
-        #    print('Error')
+        except:
+            print('Error')
     def clear(self):
         print('clear function run')
         self.trigonometry_out.clear()
