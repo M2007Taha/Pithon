@@ -392,7 +392,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Digital transformation in mathematics"))
         self.fibonacci_label.setText(_translate("MainWindow", "   تعداد مورد نظر را وارد کنید"))
         self.fibonacci_button.setText(_translate("MainWindow", "نمایش"))
         self.fibonacci_out.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
