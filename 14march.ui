@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Digital transformation in mathematics</string>
   </property>
   <property name="dockNestingEnabled">
    <bool>false</bool>
@@ -524,7 +524,7 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;right&quot; dir='rtl' style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'B Roya'; font-size:16pt;&quot;&gt;توان یک عملیات ریاضی است که به صورت b^n نوشته می‌شود. این عملیات به صورت b به توان n خوانده می‌شود و در آن b به عنوان پایه و n به عنوان توان شناخته می‌شود. هنگامی که n یک عدد صحیح مثبت باشد این عملیات معادل n بار ضرب b در خودش است.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="exponentiation_number">
+     <widget class="QLineEdit" name="exponentiation_base_input">
       <property name="geometry">
        <rect>
         <x>160</x>
@@ -543,7 +543,7 @@ text-align: center;</string>
        <enum>QLineEdit::Normal</enum>
       </property>
      </widget>
-     <widget class="QLineEdit" name="exponentiation_power">
+     <widget class="QLineEdit" name="exponentiation_exponent_input">
       <property name="geometry">
        <rect>
         <x>160</x>
@@ -588,7 +588,7 @@ text-align: center;</string>
        <string>محاسبه</string>
       </property>
      </widget>
-     <widget class="QLabel" name="exponentiation_label_number">
+     <widget class="QLabel" name="exponentiation_label_base">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -604,7 +604,7 @@ text-align: center;</string>
        <string>  : پایه</string>
       </property>
      </widget>
-     <widget class="QLabel" name="exponentiation_label_power">
+     <widget class="QLabel" name="exponentiation_label_exponent">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -818,8 +818,8 @@ font: 75 8pt &quot;B Titr&quot;;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>100</width>
-         <height>30</height>
+         <width>590</width>
+         <height>541</height>
         </rect>
        </property>
        <attribute name="label">
@@ -970,10 +970,10 @@ p, li { white-space: pre-wrap; }
        <string>محاسبه</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="gcd_lcm_input">
+     <widget class="QLineEdit" name="gcd_lcm_input1">
       <property name="geometry">
        <rect>
-        <x>205</x>
+        <x>80</x>
         <y>171</y>
         <width>200</width>
         <height>90</height>
@@ -1028,7 +1028,26 @@ p, li { white-space: pre-wrap; }
        <string notr="true">font: 75 12pt &quot;B Titr&quot;;</string>
       </property>
       <property name="text">
-       <string>   عدد مورد نظر را وارد کنید</string>
+       <string>   اعداد مورد نظر را وارد کنید</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="gcd_lcm_input2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>170</y>
+        <width>200</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Bell MT&quot;;
+background-color:#ef9439;
+color:#23301f;
+text-align: center;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
       </property>
      </widget>
     </widget>
