@@ -31,7 +31,7 @@ class main():
             print("fibonacci function run")
             counter = int(self.gui.fibonacci_input.text())
             a, b = 0, 1
-            for _ in range(1,counter):
+            for _ in range(0,counter):
                 self.gui.fibonacci_out.append(f"{a}\n")
                 print(a, end=" ")
                 a, b = b, a+b
@@ -78,11 +78,14 @@ class main():
         try:
             print("exponentiation function run")
             exponent = float(self.gui.exponentiation_exponent_input.text())
-            base = float(self.exponentiation_base_input.text())
+            base = float(self.gui.exponentiation_base_input.text())
             print(f"user input:\nexponent : {exponent}\nbase : {base}")
-            result = pow(base,exponent)
+            result = round(pow(base,exponent),2)
             self.gui.exponentiation_out.append(f"{result}")
             print(f"out put : {result}")
+        except ZeroDivisionError:
+            self.gui.exponentiation_out.append(f"{'Undefinde - تعریف نشده'}")
+            print(f"out put : {'Undefinde - تعریف نشده'}")
         except:
             print('Error')
     def absolute_func(self):
@@ -90,7 +93,10 @@ class main():
             print("absolute function run")
             number = float(self.gui.absolute_input.text())
             print(f"user input : {number}")
-            result = abs(number)
+            if number in {0,1}:
+                result = 1
+            else:
+                result = abs(number)
             self.gui.absolute_out.append(f'{result}')
             print(f"out put : {result}")
         except:
@@ -119,7 +125,7 @@ class main():
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    ui_file = QFile('14march.ui')
+    ui_file = QFile('dtim.ui')
     if not ui_file.open(QIODevice.ReadOnly):
         sys.exit('error: cannot open *.ui file')
     loader = QUiLoader()
@@ -128,8 +134,6 @@ if __name__ == "__main__":
     if not window:
         sys.exit(loader.errorString())
     window.show()
-    
     a = main(window)
     a.func()
-
     sys.exit(app.exec())
