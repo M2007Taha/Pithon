@@ -2,12 +2,11 @@
 @author: m2007taha
 digital_transformation_in_mathematics v1.0
 """
-import sys
+from sys import exit , argv
 from PySide6.QtWidgets import QApplication
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtCore import QFile, QIODevice
-import math
-import numpy
+from math import radians, sin, cos, tan, gcd, lcm
 
 class main():
     def __init__(self,gui):
@@ -60,16 +59,16 @@ class main():
         try:
             print("trigonometry function run")
             Input = self.gui.trigonometry_input.text()
-            angle = math.radians(int(Input))
+            angle = radians(int(Input))
             print(f"user input : {angle}")
-            sin = round(math.sin(angle),5)
-            cos = round(math.cos(angle),5)
-            tan = round(math.tan(angle),5)
+            _sin = round(sin(angle),5)
+            _cos = round(cos(angle),5)
+            _tan = round(tan(angle),5)
             if tan != 0 :
-                cot = round((1 / tan),5)
+                _cot = round((1 / _tan),5)
             else: 
-                cot = 'Undefinde - تعریف نشده'
-            result = f"sin{Input}∘ : {sin}\ncos{Input}∘ : {cos}\ntan{Input}∘ : {tan}\ncot{Input}∘ : {cot}"
+                _cot = 'Undefinde - تعریف نشده'
+            result = f"sin{Input}∘ : {_sin}\ncos{Input}∘ : {_cos}\ntan{Input}∘ : {_tan}\ncot{Input}∘ : {_cot}"
             self.gui.trigonometry_out.append(f'{result}')
             print(f'out put :\n{result}')
         except:
@@ -107,9 +106,9 @@ class main():
             number1 = int(self.gui.gcd_lcm_input1.text())
             number2 = int(self.gui.gcd_lcm_input2.text())
             print(f"user input : {number1},{number2}")
-            gcd = math.gcd(number1,number2)
-            lcm = math.lcm(number1,number2)
-            result = f"GCD({number1},{number2}) = {gcd}\nLCM({number1},{number2}) = {lcm}"
+            _gcd = gcd(number1,number2)
+            _lcm = lcm(number1,number2)
+            result = f"GCD({number1},{number2}) = {_gcd}\nLCM({number1},{number2}) = {_lcm}"
             self.gui.gcd_lcm_out.append(result)
             print(f"out put : {result}")
         except:
@@ -124,16 +123,16 @@ class main():
         self.gui.gcd_lcm_out.clear()
 
 if __name__ == "__main__":
-    app = QApplication(sys.argv)
+    app = QApplication(argv)
     ui_file = QFile('dtim.ui')
     if not ui_file.open(QIODevice.ReadOnly):
-        sys.exit('error: cannot open *.ui file')
+        exit('error: cannot open *.ui file')
     loader = QUiLoader()
     window = loader.load(ui_file)
     ui_file.close()
     if not window:
-        sys.exit(loader.errorString())
+        exit(loader.errorString())
     window.show()
     a = main(window)
     a.func()
-    sys.exit(app.exec())
+    exit(app.exec())
