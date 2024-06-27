@@ -29,7 +29,7 @@ class main():
         try:
             print("fibonacci function run")
             counter = int(self.gui.fibonacci_input.text())
-            a, b = 0, 1
+            a, b = 1, 1
             for _ in range(0,counter):
                 self.gui.fibonacci_out.append(f"{a}\n")
                 print(a, end=" ")
@@ -127,11 +127,14 @@ if __name__ == "__main__":
     ui_file = QFile('dtim.ui')
     if not ui_file.open(QIODevice.ReadOnly):
         exit('error: cannot open *.ui file')
-    loader = QUiLoader()
+    loader=QUiLoader()
     window = loader.load(ui_file)
     ui_file.close()
     if not window:
         exit(loader.errorString())
+    window.setWindowTitle('Digital transformation in mathematics')
+    #window.setWindowIcon('icone.ico')
+    window.setCentralWidget(window.main_tabs)
     window.show()
     a = main(window)
     a.func()
