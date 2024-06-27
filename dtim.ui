@@ -18,7 +18,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color:&quot;#191919&quot;;</string>
+    <string notr="true">background-color:#303051;</string>
    </property>
    <widget class="QTabWidget" name="main_tabs">
     <property name="geometry">
@@ -30,7 +30,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:#303051;color:#191919;</string>
+     <string notr="true">background-color:#303051;color:#191919;
+
+</string>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -42,17 +44,18 @@
      <widget class="QLabel" name="fibonacci_label">
       <property name="geometry">
        <rect>
-        <x>737</x>
+        <x>747</x>
         <y>227</y>
-        <width>200</width>
+        <width>210</width>
         <height>40</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 12pt &quot;B Titr&quot;;</string>
+       <string notr="true">color:#ef9439;
+      font: 13pt &quot;Calibri&quot;;</string>
       </property>
       <property name="text">
-       <string>   تعداد مورد نظر را وارد کنید</string>
+       <string>Enter the desired number</string>
       </property>
      </widget>
      <widget class="QPushButton" name="fibonacci_button">
@@ -66,8 +69,11 @@
       </property>
       <property name="font">
        <font>
-        <family>B Titr</family>
-        <pointsize>15</pointsize>
+        <family>Calibri</family>
+        <pointsize>20</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
         <kerning>true</kerning>
        </font>
       </property>
@@ -78,10 +84,11 @@
        <enum>Qt::RightToLeft</enum>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:#ef9439;</string>
+       <string notr="true">background-color:#ef9439;
+font:  20pt &quot;Calibri&quot;;</string>
       </property>
       <property name="text">
-       <string>نمایش</string>
+       <string>Display</string>
       </property>
       <property name="autoDefault">
        <bool>false</bool>
@@ -103,7 +110,7 @@
        <bool>true</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 20pt &quot;Times New Roman&quot;;
+       <string notr="true">font: 25pt &quot;Times New Roman&quot;;
 background-color:#ef9439;
 color:#23301f;
 text-align: center;</string>
@@ -115,7 +122,7 @@ text-align: center;</string>
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'B Roya'; font-size:11pt; font-weight:72;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
@@ -265,17 +272,18 @@ p, li { white-space: pre-wrap; }
      <widget class="QLabel" name="trigonometry_label">
       <property name="geometry">
        <rect>
-        <x>146</x>
+        <x>147</x>
         <y>130</y>
         <width>210</width>
         <height>40</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 12pt &quot;B Titr&quot;;</string>
+       <string notr="true">color:#ef9439;
+font:  14pt &quot;Calibri&quot;;</string>
       </property>
       <property name="text">
-       <string>   زاویه مورد نظر را وارد کنید</string>
+       <string>Enter your desired angle</string>
       </property>
      </widget>
      <widget class="QPushButton" name="trigonometry_button">
@@ -289,8 +297,11 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="font">
        <font>
-        <family>B Titr</family>
-        <pointsize>15</pointsize>
+        <family>Calibri</family>
+        <pointsize>20</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
         <kerning>true</kerning>
        </font>
       </property>
@@ -298,10 +309,12 @@ p, li { white-space: pre-wrap; }
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:#ef9439;</string>
+       <string notr="true">background-color:#ef9439;
+font:  20pt &quot;Calibri&quot;;
+</string>
       </property>
       <property name="text">
-       <string>محاسبه</string>
+       <string>Calculate</string>
       </property>
      </widget>
      <widget class="QTextBrowser" name="trigonometry_out">
@@ -310,7 +323,7 @@ p, li { white-space: pre-wrap; }
         <x>100</x>
         <y>270</y>
         <width>441</width>
-        <height>271</height>
+        <height>221</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -357,32 +370,6 @@ text-align: center;</string>
      <attribute name="title">
       <string>Factorial</string>
      </attribute>
-     <widget class="QPushButton" name="factorial_button">
-      <property name="geometry">
-       <rect>
-        <x>844</x>
-        <y>293</y>
-        <width>130</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>B Titr</family>
-        <pointsize>15</pointsize>
-        <kerning>true</kerning>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:#ef9439;</string>
-      </property>
-      <property name="text">
-       <string>محاسبه</string>
-      </property>
-     </widget>
      <widget class="QTextBrowser" name="factorial_fa">
       <property name="geometry">
        <rect>
@@ -412,10 +399,10 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextBrowser" name="factorial_out">
       <property name="geometry">
        <rect>
-        <x>690</x>
-        <y>380</y>
-        <width>440</width>
-        <height>100</height>
+        <x>720</x>
+        <y>370</y>
+        <width>390</width>
+        <height>61</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -433,22 +420,6 @@ text-align: center;</string>
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:30pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'B Roya'; font-size:18pt; font-weight:600;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="factorial_label">
-      <property name="geometry">
-       <rect>
-        <x>807</x>
-        <y>170</y>
-        <width>200</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 12pt &quot;B Titr&quot;;</string>
-      </property>
-      <property name="text">
-       <string>   عدد مورد نظر را وارد کنید</string>
       </property>
      </widget>
      <widget class="QTextBrowser" name="factorial_en">
@@ -499,6 +470,54 @@ text-align: center;</string>
       </property>
       <property name="clearButtonEnabled">
        <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="factorial_label_2">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>170</y>
+        <width>210</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#ef9439;
+font: 13pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Enter the desired number</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="factorial_button">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>300</y>
+        <width>140</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>20</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#ef9439;
+font:  20pt &quot;Calibri&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
       </property>
      </widget>
     </widget>
@@ -621,8 +640,11 @@ text-align: center;</string>
       </property>
       <property name="font">
        <font>
-        <family>B Titr</family>
-        <pointsize>15</pointsize>
+        <family>Calibri</family>
+        <pointsize>22</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
         <kerning>true</kerning>
        </font>
       </property>
@@ -630,42 +652,45 @@ text-align: center;</string>
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:#ef9439;</string>
+       <string notr="true">background-color:#ef9439;
+font:  22pt &quot;Calibri&quot;;</string>
       </property>
       <property name="text">
-       <string>محاسبه</string>
+       <string>Calculate</string>
       </property>
      </widget>
      <widget class="QLabel" name="exponentiation_label_base">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>20</x>
         <y>270</y>
-        <width>60</width>
+        <width>140</width>
         <height>40</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 12pt &quot;B Titr&quot;;</string>
+       <string notr="true">font:  15pt &quot;Calibri&quot;;
+color:#ef9439;</string>
       </property>
       <property name="text">
-       <string>  : پایه</string>
+       <string>Number Base:</string>
       </property>
      </widget>
      <widget class="QLabel" name="exponentiation_label_exponent">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>40</x>
         <y>160</y>
-        <width>60</width>
+        <width>100</width>
         <height>40</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 12pt &quot;B Titr&quot;;</string>
+       <string notr="true">font:  15pt &quot;Calibri&quot;;
+color:#ef9439;</string>
       </property>
       <property name="text">
-       <string>  : توان</string>
+       <string>Exponent:</string>
       </property>
      </widget>
      <widget class="QTextBrowser" name="exponentiation_out">
@@ -703,9 +728,9 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>50</y>
+        <y>40</y>
         <width>560</width>
-        <height>240</height>
+        <height>250</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -737,9 +762,7 @@ p, li { white-space: pre-wrap; }
       <property name="styleSheet">
        <string notr="true">background-color:#ef9439;
 color:#23301f;
-font: 22pt &quot;NPIParisa&quot;;
-
-</string>
+font: 22pt &quot;Calibri&quot;;</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::Box</enum>
@@ -748,35 +771,9 @@ font: 22pt &quot;NPIParisa&quot;;
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'NPIParisa'; font-size:22pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:22pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;Absolute&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:72;&quot;&gt;In mathematics, the absolute value or the absolute value of a real number x, denoted by |x| It is shown that the value of x is non-negative and regardless of its sign. So the absolute value of a number is always non-negative. That is, it is either positive or zero. In other words, the absolute value of a number is equal to the distance of that number to zero.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="absolute_button">
-      <property name="geometry">
-       <rect>
-        <x>855</x>
-        <y>260</y>
-        <width>160</width>
-        <height>80</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>B Titr</family>
-        <pointsize>15</pointsize>
-        <kerning>true</kerning>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:#ef9439;</string>
-      </property>
-      <property name="text">
-       <string>محاسبه</string>
       </property>
      </widget>
      <widget class="QTextBrowser" name="absolute_out">
@@ -833,17 +830,48 @@ text-align: center;</string>
      <widget class="QLabel" name="absolute_label">
       <property name="geometry">
        <rect>
-        <x>827</x>
+        <x>840</x>
         <y>110</y>
-        <width>200</width>
+        <width>210</width>
         <height>40</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 12pt &quot;B Titr&quot;;</string>
+       <string notr="true">font: 13pt &quot;Calibri&quot;;
+color:#ef9439;</string>
       </property>
       <property name="text">
-       <string>   عدد مورد نظر را وارد کنید</string>
+       <string>Enter the desired number</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="absolute_button">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>252</y>
+        <width>170</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>22</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#ef9439;
+font:  22pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
       </property>
      </widget>
     </widget>
@@ -873,7 +901,7 @@ font: 75 8pt &quot;B Titr&quot;;</string>
          <x>0</x>
          <y>0</y>
          <width>590</width>
-         <height>539</height>
+         <height>535</height>
         </rect>
        </property>
        <attribute name="label">
@@ -937,8 +965,8 @@ p, li { white-space: pre-wrap; }
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>590</width>
-         <height>539</height>
+         <width>100</width>
+         <height>30</height>
         </rect>
        </property>
        <attribute name="label">
@@ -998,32 +1026,6 @@ p, li { white-space: pre-wrap; }
        </widget>
       </widget>
      </widget>
-     <widget class="QPushButton" name="gcd_lcm_button">
-      <property name="geometry">
-       <rect>
-        <x>225</x>
-        <y>281</y>
-        <width>160</width>
-        <height>80</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>B Titr</family>
-        <pointsize>15</pointsize>
-        <kerning>true</kerning>
-       </font>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:#ef9439;</string>
-      </property>
-      <property name="text">
-       <string>محاسبه</string>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="gcd_lcm_input1">
       <property name="geometry">
        <rect>
@@ -1075,22 +1077,6 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'B Roya'; font-size:18pt; font-weight:600;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QLabel" name="gcd_lcm_label">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>130</y>
-        <width>200</width>
-        <height>40</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">font: 75 12pt &quot;B Titr&quot;;</string>
-      </property>
-      <property name="text">
-       <string>   اعداد مورد نظر را وارد کنید</string>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="gcd_lcm_input2">
       <property name="geometry">
        <rect>
@@ -1116,6 +1102,53 @@ text-align: center;</string>
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QLabel" name="absolute_label_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>120</y>
+        <width>210</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 13pt &quot;Calibri&quot;;
+color:#ef9439;</string>
+      </property>
+      <property name="text">
+       <string>Enter the desired number</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="gcd_lcm_button">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>280</y>
+        <width>170</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>22</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#ef9439;
+font:  22pt &quot;Calibri&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="about">
      <attribute name="title">
@@ -1130,34 +1163,31 @@ text-align: center;</string>
         <height>681</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">color:#ef9439;
+font: 20pt &quot;Calibri&quot;;</string>
+      </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.85455pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Calibri'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.85455pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;طاها مصطفوی&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;Taha Mostafavi&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;tahabehfar@gmail.com&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;github.com/&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600; color:#ff4500;&quot;&gt;M2007Taha&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; color:#ff4500;&quot;&gt;latest update :‌ Tue Feb 13 2024&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff4500;&quot;&gt;طاها مصطفوی&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;Taha Mostafavi&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;tahabehfar@gmail.com&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; color:#ff4500;&quot;&gt;github.com/&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-weight:600; color:#ff4500;&quot;&gt;M2007Taha&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff4500;&quot;&gt;latest update :‌ 3/31/2024&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
@@ -1166,22 +1196,6 @@ p, li { white-space: pre-wrap; }
  </widget>
  <resources/>
  <connections>
-  <connection>
-   <sender>factorial_button</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>803</x>
-     <y>302</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>556</x>
-     <y>311</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>trigonometry_button</sender>
    <signal>clicked()</signal>
@@ -1207,38 +1221,6 @@ p, li { white-space: pre-wrap; }
     <hint type="sourcelabel">
      <x>341</x>
      <y>472</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>622</x>
-     <y>360</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>absolute_button</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>946</x>
-     <y>332</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>622</x>
-     <y>360</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>gcd_lcm_button</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>show()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>353</y>
     </hint>
     <hint type="destinationlabel">
      <x>622</x>
