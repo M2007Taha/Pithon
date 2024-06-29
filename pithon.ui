@@ -44,9 +44,9 @@
      <widget class="QLabel" name="fibonacci_label">
       <property name="geometry">
        <rect>
-        <x>747</x>
+        <x>750</x>
         <y>227</y>
-        <width>210</width>
+        <width>220</width>
         <height>40</height>
        </rect>
       </property>
@@ -55,7 +55,7 @@
       font: 13pt &quot;Calibri&quot;;</string>
       </property>
       <property name="text">
-       <string>Enter the desired number</string>
+       <string>Enter the desired number:</string>
       </property>
      </widget>
      <widget class="QPushButton" name="fibonacci_button">
@@ -779,10 +779,10 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextBrowser" name="absolute_out">
       <property name="geometry">
        <rect>
-        <x>740</x>
-        <y>359</y>
-        <width>390</width>
-        <height>100</height>
+        <x>760</x>
+        <y>350</y>
+        <width>360</width>
+        <height>90</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1105,9 +1105,9 @@ text-align: center;</string>
      <widget class="QLabel" name="absolute_label_2">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>200</x>
         <y>120</y>
-        <width>210</width>
+        <width>220</width>
         <height>40</height>
        </rect>
       </property>
@@ -1116,7 +1116,7 @@ text-align: center;</string>
 color:#ef9439;</string>
       </property>
       <property name="text">
-       <string>Enter the desired number</string>
+       <string>Enter the desired number:</string>
       </property>
      </widget>
      <widget class="QPushButton" name="gcd_lcm_button">
@@ -1187,7 +1187,7 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; color:#ff4500;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff4500;&quot;&gt;latest update :‌ 3/31/2024&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#ff4500;&quot;&gt;Latest update :‌ 6/20/2024&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
