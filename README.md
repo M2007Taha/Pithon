@@ -24,7 +24,7 @@ Interface Overview: The application window consists of several tabs, each dedica
 Input Fields: Enter the required values (e.g., numbers, angles) in the designated input fields within each tab.
 Buttons: Click the corresponding buttons (e.g., "Calculate") to trigger the calculations.
 Output Fields: The results of the calculations will be displayed in the corresponding output fields within each tab.
-Clear Button: Use the "Clear" button (if available) to erase previous results and start fresh within a tab.
+
 #### Pi Day Fun
 
 πthon is ideal for Pi Day celebrations! You can use it to:
