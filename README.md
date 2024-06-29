@@ -22,13 +22,6 @@ The application features a clear and intuitive graphical user interface (GUI) th
 
 Prerequisites: Ensure you have Python 3 and PySide6 installed on your system. You can typically install them using your system's package manager.
 
-Clone the Repository: Open a terminal or command prompt and navigate to your desired project directory. Clone this repository using the following command:
-
-Bash
-git clone https://github.com/M2007Taha/pithon.git
-Use code with caution.
-content_copy
-
 Run the Application: Navigate to the cloned repository directory and execute:
 
 Bash
