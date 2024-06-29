@@ -18,18 +18,6 @@ Absolute Value: Determine the absolute value of a number.
 Greatest Common Divisor (GCD) and Least Common Multiple (LCM): Find the GCD and LCM of two numbers.
 The application features a clear and intuitive graphical user interface (GUI) that simplifies user interaction with these functions.
 
-#### Installation
-
-Prerequisites: Ensure you have Python 3 and PySide6 installed on your system. You can typically install them using your system's package manager.
-
-Run the Application: Navigate to the cloned repository directory and execute:
-
-Bash
-python pithon.py
-Use code with caution.
-content_copy
-This will launch the πthon application.
-
 #### Usage
 
 Interface Overview: The application window consists of several tabs, each dedicated to a specific mathematical operation.
