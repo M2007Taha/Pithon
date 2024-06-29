@@ -1,5 +1,5 @@
 import pytest
-from dtim import main
+from pithon import main
 
 class GUI:
     def __init__(self):
@@ -59,4 +59,4 @@ def test_clear(app):
         }
     
 if __name__ == "__main__":
-    pytest.main(['-v', 'test_dtim.py'])
+    pytest.main(['-v', 'test_pithon.py'])
