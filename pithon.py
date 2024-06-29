@@ -3,6 +3,7 @@
 digital_transformation_in_mathematics v1.0
 """
 from sys import exit , argv
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtCore import QFile, QIODevice
@@ -124,7 +125,7 @@ class main():
 
 if __name__ == "__main__":
     app = QApplication(argv)
-    ui_file = QFile('dtim.ui')
+    ui_file = QFile('pithon.ui')
     if not ui_file.open(QIODevice.ReadOnly):
         exit('error: cannot open *.ui file')
     loader=QUiLoader()
@@ -132,8 +133,8 @@ if __name__ == "__main__":
     ui_file.close()
     if not window:
         exit(loader.errorString())
-    window.setWindowTitle('Digital transformation in mathematics')
-    #window.setWindowIcon('icone.ico')
+    window.setWindowTitle('πthon')
+    window.setWindowIcon(QIcon('icone.png'))
     window.setCentralWidget(window.main_tabs)
     window.show()
     a = main(window)
