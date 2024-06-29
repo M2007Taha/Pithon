@@ -1,6 +1,6 @@
 """
 @author: m2007taha
-digital_transformation_in_mathematics v1.0
+πthon v1.0
 """
 from sys import exit , argv
 from PySide6.QtGui import QIcon
