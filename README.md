@@ -1,4 +1,4 @@
-![icone](https://github.com/M2007Taha/digital_transformation_in_mathematics/assets/109727381/237fe466-afde-46fd-88da-90c0a8060d58)
+![thumbnail](https://github.com/M2007Taha/Pithon/assets/109727381/e3ce27f9-c7ea-4c06-b1c9-344cfb2ebff2)
 
 # πthon: A Mathematical Calculator for Pi Day and Beyond
 
