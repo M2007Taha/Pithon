@@ -24,6 +24,54 @@ Interface Overview: The application window consists of several tabs, each dedica
 Input Fields: Enter the required values (e.g., numbers, angles) in the designated input fields within each tab.
 Buttons: Click the corresponding buttons (e.g., "Calculate") to trigger the calculations.
 Output Fields: The results of the calculations will be displayed in the corresponding output fields within each tab.
+Prerequisites
+Bash Shell: Ensure you have a working installation of the bash shell on your system.
+
+Pyinstaller: Install the pyinstaller tool using your system's package manager. For example, on Ubuntu or macOS, use:
+
+Bash
+pip install pyinstaller
+Use code with caution.
+content_copy
+Conversion Steps
+Create the Bash Script:
+
+Create a new file with a .sh extension (e.g., pithon_converter.sh).
+
+Open the file in a text editor.
+
+Copy and Paste the Script:
+
+Copy the following bash script into the text editor:
+Bash
+#!/bin/bash
+
+pyinstaller --icon=icon.ico -F --noconsole pithon.py
+Use code with caution.
+content_copy
+Replace icon.ico with the actual path to your icon file (if you want to include an icon).
+Replace pithon.py with the filename of your Python script.
+Save the Script:
+
+Save the changes made to the bash script.
+Making the Script Executable
+Change Permissions:
+
+Open a terminal window and navigate to the directory containing the bash script.
+Use the following command to grant execute permission to the script:
+Bash
+chmod +x pithon_converter.sh
+Use code with caution.
+content_copy
+Running the Script
+Execute the Script:
+
+To run the converted bash script, simply type the following command in the terminal:
+Bash
+./pithon_converter.sh
+Use code with caution.
+content_copy
+This will execute the pyinstaller command and generate the executable file for your Python script.
 
 #### Pi Day Fun
 
